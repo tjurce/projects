@@ -1,0 +1,9 @@
+c:\users\tomi\documents\visual studio 2015\Projects\TicTacToeCSharp\TicTacToeCSharp\bin\Debug\TicTacToeCSharp.exe.config
+c:\users\tomi\documents\visual studio 2015\Projects\TicTacToeCSharp\TicTacToeCSharp\bin\Debug\TicTacToeCSharp.exe
+c:\users\tomi\documents\visual studio 2015\Projects\TicTacToeCSharp\TicTacToeCSharp\bin\Debug\TicTacToeCSharp.pdb
+c:\users\tomi\documents\visual studio 2015\Projects\TicTacToeCSharp\TicTacToeCSharp\obj\Debug\TicTacToeCSharp.csprojResolveAssemblyReference.cache
+c:\users\tomi\documents\visual studio 2015\Projects\TicTacToeCSharp\TicTacToeCSharp\obj\Debug\TicTacToeCSharp.Form1.resources
+c:\users\tomi\documents\visual studio 2015\Projects\TicTacToeCSharp\TicTacToeCSharp\obj\Debug\TicTacToeCSharp.Properties.Resources.resources
+c:\users\tomi\documents\visual studio 2015\Projects\TicTacToeCSharp\TicTacToeCSharp\obj\Debug\TicTacToeCSharp.csproj.GenerateResource.Cache
+c:\users\tomi\documents\visual studio 2015\Projects\TicTacToeCSharp\TicTacToeCSharp\obj\Debug\TicTacToeCSharp.exe
+c:\users\tomi\documents\visual studio 2015\Projects\TicTacToeCSharp\TicTacToeCSharp\obj\Debug\TicTacToeCSharp.pdb

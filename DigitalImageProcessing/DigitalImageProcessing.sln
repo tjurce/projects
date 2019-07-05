@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
@@ -21,3 +22,28 @@ Global
 		SolutionGuid = {204448CB-EFD3-4779-8454-2BF81CFC2584}
 	EndGlobalSection
 EndGlobal
+=======
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "DigitalImageProcessing", "DigitalImageProcessing\DigitalImageProcessing.pyproj", "{92805CEF-7B1C-49D0-8811-A95E1EFB5716}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92805CEF-7B1C-49D0-8811-A95E1EFB5716}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92805CEF-7B1C-49D0-8811-A95E1EFB5716}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {204448CB-EFD3-4779-8454-2BF81CFC2584}
+	EndGlobalSection
+EndGlobal
+>>>>>>> 5182916d9ebe06982fee53051a802908c9b75cb2

@@ -1,0 +1,87 @@
+<link rel="stylesheet" href="Styles/band.css">
+
+<div ng-controller="bandController as members">
+    <h1 class="header_band">Current members</h1>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-md-12 col-xs-12" ng-repeat="member in members.data" ng-if="member.current">
+            <div class="well member-columns">
+                <div class="row">
+                    <div class="col-md-6 col-xs-12">
+                        <img ng-src="{{member.image_url}}" class="img-rounded img-responsive img-custom">
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <h4>{{member.name}}</h4>
+                        <p><strong>Band position: </strong>{{member.band_position}}</p>
+                        <p><strong>In band: </strong>{{member.band_time}}</p>
+                        <p><strong>Born: </strong>{{member.born}}</p>
+                        <p><strong>Instruments: </strong>{{member.instruments}}</p>
+                        <p><strong>Years active: </strong>{{member.years_active}}</p>
+
+                        <!--aktivacija modalnog dijaloga u kojem se prikazuje aktivirani clan-->
+                        <button class="btn btn-primary pull-right" data-toggle="modal" data-target="#member-info" ng-click="members.changeActiveMember(member)">See More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1 class="header_band">Past members</h1>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-md-6 col-xs-12" ng-repeat="member in members.data" ng-if="member.past">
+            <div class="well member-columns">
+                <div class="row">
+                    <div class="col-md-6 col-xs-12">
+                        <img class="past-img img-rounded img-responsive img-custom" ng-src="{{member.image_url}}">
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <h4>{{member.name}}</h4>
+                        <p><strong>Band position: </strong>{{member.band_position}}</p>
+                        <p><strong>In band: </strong>{{member.band_time}}</p>
+                        <p><strong>Born: </strong>{{member.born}}</p>
+                        <p><strong>Instruments: </strong>{{member.instruments}}</p>
+                        <p><strong>Years active: </strong>{{member.years_active}}</p>
+    
+                        <!--aktivacija modalnog dijaloga u kojem se prikazuje aktivirani clan-->
+                        <button class="btn btn-primary pull-right btn-past" data-toggle="modal" data-target="#member-info" ng-click="members.changeActiveMember(member)">See More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--modalni dijalog-->
+    <div class="modal" id="member-info">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 id="center-heading">{{members.activeMember.name}}</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-xs-8 col-xs-offset-2">
+                            <a href="{{members.activeMember.image_url}}" target="_blank"><img ng-src="{{members.activeMember.image_url}}" class="img-rounded img-responsive"></a>
+                        </div>
+                    </div>
+                    <div class="row top-buffer">
+                        <div class="col-md-6 col-xs-6">
+                            <p><strong>Band position: </strong>{{members.activeMember.band_position}}</p>
+                            <p><strong>In band: </strong>{{members.activeMember.band_time}}</p>
+                            <p><strong>Born: </strong>{{members.activeMember.born}}</p>
+                            <p><strong>Instruments: </strong>{{members.activeMember.instruments}}</p>
+                            <p><strong>Years active: </strong>{{members.activeMember.years_active}}</p>
+                        </div>
+                        <div ng-if="members.activeMember.current">
+                            <pre class="member-right-buffer" id="member"><strong>Biography: </strong>{{members.activeMember.bio}}</pre>
+                        </div>
+
+                        <button class="btn btn-danger pull-right right-buffer" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

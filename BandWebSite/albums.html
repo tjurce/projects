@@ -1,0 +1,56 @@
+<link rel="stylesheet" href="Styles/albums.css">
+
+<div ng-controller="albumsController as albums">
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-md-6 col-xs-6" ng-repeat="album in albums.data">
+            <div class="well album-columns">
+                <div class="row">
+                    <div class="col-md-6 col-xs-6">
+                        <img ng-src="{{album.image_url}}" alt="album_poster" class="img-rounded img-responsive img-custom">
+                    </div>
+                    <div class="col-md-6 col-xs-6">
+                        <h4>{{album.name}}</h4>
+                        <p><strong>Year: </strong>{{album.year}}</p>
+                        <p><strong>Genre: </strong>{{album.genres}}</p>
+                        <p><strong>Number of songs: </strong>{{album.songs_num}}</p>
+
+                        <!--aktivacija modalnog dijaloga u kojem se prikazuje aktivirani album-->
+                        <button class="btn btn-primary pull-right" data-toggle="modal" data-target="#album-info" ng-click="albums.changeActiveAlbum(album)">See More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--modalni dijalog -->
+    <div class="modal" id="album-info">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 id="center-heading">{{albums.activeAlbum.name}}</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-xs-8 col-xs-offset-2">
+                            <a href="{{albums.activeAlbum.image_url}}" target="_blank"><img ng-src="{{albums.activeAlbum.image_url}}" alt="album_poster" class="img-rounded img-responsive"></a>
+                        </div>
+                    </div>
+                    <div class="row top-buffer">
+                        <div class="col-md-6 col-xs-6">
+                            <p><strong>Year: </strong>{{albums.activeAlbum.year}}</p>
+                            <p><strong>Genres: </strong>{{albums.activeAlbum.genres}}</p>
+                            <p><strong>Number of songs: </strong>{{albums.activeAlbum.songs_num}}</p>
+                        </div>
+                        <div>
+                            <pre class="songs-right-buffer" id="song"><strong>Songs: </strong>{{albums.activeAlbum.songs}}</pre>
+                        </div>
+
+                        <button class="btn btn-danger pull-right right-buffer" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

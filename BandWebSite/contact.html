@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="Styles/contact.css">
+
+<!--Kontakt forma koja koristi php skriptu koja sadrzi library PHPMailer.
+Skripta prima podatke upisane u formu te preko PHPMailer librarija šalje mail preko e-mail servisa na mail od administratora stranice.
+Mail sadrži ime osobe koja ga je poslala, naslov teme, e-mail na koji je potrebno odogovoriti te vrijeme kada je mail poslan.-->
+<div id="middle">
+  <div class="form-contact">
+    <form action="Scripts/email_form.php" method="post">
+      <input type="text" name="name" placeholder="Name..."><br>
+      <input type="text" name="subject" placeholder="Subject..."><br>
+      <input type="email" name="email" placeholder="Your Email Address..."><br>
+      <textarea name="message" placeholder="Message..."></textarea><br>
+      <button class="btn btn-primary" type="submit">Send Email</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,55 @@
+.detTitle {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgba(0,0,0,0.05);
+    padding: 5px;
+}
+
+.detTitle h1 {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial;
+    text-align: center;
+}
+
+.detImg {
+    margin: auto;
+    text-align: center;
+    width: 550px;
+    height: 550px;
+    background-color: rgba(0,0,0,0.05);
+    border: 2px solid darkgrey;
+    border-radius: 25px;
+    box-shadow: 0px 0px 50px darkgrey;
+    margin-bottom: 50px;
+}
+
+.detDesc {
+    font-size: 18px;
+    margin-bottom: 15px;
+    float: left;
+    display: block;
+}
+
+.detEnd {
+    float: right;
+    margin-bottom: 10px;
+}
+
+.detPrice {
+    display: block;
+    margin: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.detBtn {
+    margin: 15px;
+}
+
+.footer {
+    clear: both;
+    margin-top: 50px;
+}

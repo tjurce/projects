@@ -1,0 +1,348 @@
+/********** CSS reset begins **********/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/********** CSS reset finishes **********/
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+.menu_bar {
+    margin-top: 20px;
+    padding: 0px;
+}
+
+.menu_bar span {
+    margin-left: 15px;
+    font-size: 25px;
+}
+
+.menu {
+    margin-right: 15px;
+    text-align: right;
+}
+
+.menu li {
+    display: inline;
+    list-style: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    font-size: 25px;
+    color: darkgrey;
+    font-family: 'Courier New';
+}
+
+.menu li a i {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+.menu p {
+    font-size: 25px;
+    display: inline;
+    color: darkgrey;
+}
+
+#form {
+    margin-right: 5px;
+    padding: 0px;
+}
+
+form input {
+    height: 25px;
+}
+
+form input[type="text"] {
+    width: 150px;
+}
+
+form input[type="submit"] {
+    width: 75px;
+    height: 28px;
+    line-height: 14px;
+}
+
+.nav {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.nav li {
+    display: inline;
+    list-style: none;
+}
+
+.nav li a {
+    text-decoration: none;
+    font-size: 35px;
+    color: black;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-top: 5px;
+}
+
+.dropbtn {
+    font-size: 35px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 360px;
+    box-shadow: 0px 10px 20px 5px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.nav li .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    font-family: 'Courier New';
+    font-weight: bold;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    border-radius: 20px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    border-radius: 20px;
+}
+
+.main_wrapper {
+    margin-top: 50px;
+}
+
+.content {
+    margin: auto;
+    margin-bottom: 50px;
+    border: 2px solid darkgrey;
+    border-radius: 25px;
+    box-shadow: 0px 0px 50px darkgrey;
+    width: 450px;
+    height: 450px;
+    background-color: rgba(0,0,0,0.05);
+}
+
+.img-pro {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.data-pro {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.data-pro h4 {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.data-pro p {
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.header {
+    width: inherit;
+    background-color: rgba(0,0,0,0.05);
+    padding: 5px;
+}
+
+.header h1 {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial;
+    text-align: center;
+}
+
+.footer {
+    background-color: rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.img-header {
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 10px;
+    width: 1000px;
+    text-align: center;
+    border: 2px solid darkgrey;
+    border-radius: 25px;
+    box-shadow: 0px 0px 50px darkgrey;
+    background-color: rgba(0,0,0,0.05);
+}
+
+
+.img-header i {
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 1px solid black;
+    padding: 3px;
+    box-shadow: 0px 0px 10px darkgrey;
+}
+
+.img-header i:hover {
+    cursor: pointer;
+}
+
+.custom_cart {
+    margin: auto;
+    border: 2px solid darkgrey;
+}
+
+.custom_cart h2, .custom_cart p, .custom_cart i {
+    line-height: 150px;
+}
+
+.custom_cart h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.custom_cart a:hover {
+    text-decoration: none;
+}
+
+.custom_cart p {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.custom_cart i {
+    font-size: 25px;
+    color: black;
+}
+
+.custom_cart i:hover {
+    cursor: pointer;
+}
+
+.custom_cart img {
+    border: 2px solid darkgrey;
+    border-radius: 25px;
+    box-shadow: 0px 0px 50px darkgrey;
+    background-color: rgba(0,0,0,0.05);
+}
+
+.cart_wrapper {
+    margin: auto;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.totalPrice {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: right;
+    padding: 15px;
+}
+
+a h3 {
+    text-decoration: underline;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.paypal_img {
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 479px;
+    height: 145px;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.welcome h3 {
+    font-size: 14px;
+    display: inline;
+    text-align: center;
+}
+
+.welcome a {
+    color: black;
+    text-decoration: underline;
+}
+
+.addCart_img {
+    margin-left: 35px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html ng-app="metallicaApp">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Metallica - The Greatest Trash Metal Band</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="Styles/style.css">
+      </head>
+    <body ng-controller="mainController">
+        <header>
+            <h2 class="title">MetallicA</h2>
+            <h2 class="subtitle">Do you want heavy? 'Tallica gives you heavy baby!!!</h2>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#/!">Home</a></li>
+                <li><a href="#!news">News</a></li>
+                <li><a href="#!band">Band</a></li>
+                <li><a href="#!albums">Albums</a></li>
+                <li><a href="#!movie">Movie</a></li>
+                <li><a href="#!contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!--U ovaj dio koda ubacujem i prikazujem parcijalne html stranice ovisi o odabiru u navigacijskom meniju-->
+        <div id="main">
+            <div ng-view></div> 
+        </div>
+        <footer>
+            <hr>
+            <p class="footer-line">&copy;Tomi 2017</p>
+        </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script> 
+        <script src="Scripts/app.js"></script>
+        <script src="Scripts/albums.js"></script>
+        <script src="Scripts/band.js"></script>
+        <script src="Scripts/Factories/albumsList.js"></script>
+        <script src="Scripts/Factories/bandMembers.js"></script>
+    </body>
+</html>

@@ -23,8 +23,8 @@
     $mail->SMTPDEBUG = "2";
     $mail->Host = gethostbyname('smtp.live.com');
     $mail->SMTPAuth = true;
-    $mail->Username = 'tomi.jurcevic@hotmail.com';
-    $mail->Password = 'Bloodonblood1989';
+    $mail->Username = '********@hotmail.com';
+    $mail->Password = '*********';
     $mail->SMTPSecure = 'tls';
     $mail->Port = 587;
 
@@ -40,8 +40,8 @@
     date_default_timezone_set("Europe/Zagreb");
     $time = "This request has been sent at " . date("H:i:sa");
     $message = $message . "<br>" . $time . "<br>" . $user_timezone;
-    $mail->setFrom('tomi.jurcevic@hotmail.com');
-    $mail->addAddress('tomi.jurcevic@gmail.com');
+    $mail->setFrom('*********@hotmail.com');
+    $mail->addAddress('*********@gmail.com');
     $mail->addReplyTo($email);
     $mail->isHTML(true);
     $mail->Subject = $subject . ' from ' . $name;
